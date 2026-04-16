@@ -110,16 +110,16 @@
             // columnHeader1
             // 
             columnHeader1.Text = "이름";
+            columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
             columnHeader2.Text = "크기";
-            columnHeader2.Width = 50;
             // 
             // columnHeader3
             // 
             columnHeader3.Text = "수정일";
-            columnHeader3.Width = 100;
+            columnHeader3.Width = 200;
             // 
             // panel2
             // 
@@ -212,16 +212,16 @@
             // columnHeader4
             // 
             columnHeader4.Text = "이름";
+            columnHeader4.Width = 100;
             // 
             // columnHeader5
             // 
             columnHeader5.Text = "크기";
-            columnHeader5.Width = 50;
             // 
             // columnHeader6
             // 
             columnHeader6.Text = "수정일";
-            columnHeader6.Width = 100;
+            columnHeader6.Width = 200;
             // 
             // panel5
             // 
