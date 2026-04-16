@@ -44,6 +44,12 @@
             txtRightDir = new TextBox();
             panel4 = new Panel();
             btnCopyFromRight = new Button();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
+            columnHeader4 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -91,11 +97,15 @@
             // 
             lvwLeftDir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lvwLeftDir.BackColor = SystemColors.Window;
+            lvwLeftDir.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
+            lvwLeftDir.FullRowSelect = true;
+            lvwLeftDir.GridLines = true;
             lvwLeftDir.Location = new Point(3, 3);
             lvwLeftDir.Name = "lvwLeftDir";
             lvwLeftDir.Size = new Size(436, 234);
             lvwLeftDir.TabIndex = 0;
             lvwLeftDir.UseCompatibleStateImageBehavior = false;
+            lvwLeftDir.View = View.Details;
             // 
             // panel2
             // 
@@ -174,11 +184,15 @@
             // 
             lvwrightDir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lvwrightDir.BackColor = SystemColors.Window;
+            lvwrightDir.Columns.AddRange(new ColumnHeader[] { columnHeader4, columnHeader5, columnHeader6 });
+            lvwrightDir.FullRowSelect = true;
+            lvwrightDir.GridLines = true;
             lvwrightDir.Location = new Point(3, 3);
             lvwrightDir.Name = "lvwrightDir";
             lvwrightDir.Size = new Size(421, 234);
             lvwrightDir.TabIndex = 0;
             lvwrightDir.UseCompatibleStateImageBehavior = false;
+            lvwrightDir.View = View.Details;
             // 
             // panel5
             // 
@@ -230,6 +244,34 @@
             btnCopyFromRight.Text = "<<<";
             btnCopyFromRight.UseVisualStyleBackColor = true;
             // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "이름";
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "크기";
+            columnHeader2.Width = 50;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "수정일";
+            columnHeader3.Width = 100;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "이름";
+            // 
+            // columnHeader5
+            // 
+            columnHeader5.Text = "크기";
+            columnHeader5.Width = 50;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "수정일";
+            columnHeader6.Width = 100;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -273,5 +315,11 @@
         private TextBox txtRightDir;
         private Panel panel4;
         private Button btnCopyFromRight;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
     }
 }
