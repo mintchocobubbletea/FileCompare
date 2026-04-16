@@ -243,13 +243,13 @@ namespace FileCompare
 
             try
             {
-                // 대상 파일 존재 여부 확인
+                
                 if (File.Exists(destFile))
                 {
                     DateTime srcTime = File.GetLastWriteTime(sourceFile);
                     DateTime destTime = File.GetLastWriteTime(destFile);
 
-                    // 날짜 비교
+                    
                     if (srcTime > destTime)
                     {
                         var result = MessageBox.Show(
