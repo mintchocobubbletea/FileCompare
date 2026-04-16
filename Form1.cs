@@ -84,7 +84,7 @@ namespace FileCompare
                 }
             }
 
-            // 오른쪽도 동일하게 처리 (방향 반대로!)
+            // 오른쪽도 동일하게 처리
             foreach (ListViewItem item in lvwrightDir.Items)
             {
                 if (item.SubItems[1].Text == "<DIR>") continue;
@@ -100,7 +100,7 @@ namespace FileCompare
                         break;
 
                     case FileState.New:
-                        item.ForeColor = Color.Gray; // 오른쪽은 반대!
+                        item.ForeColor = Color.Gray;
                         break;
 
                     case FileState.Old:
