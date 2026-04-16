@@ -118,6 +118,7 @@
             btnLeftDir.TabIndex = 1;
             btnLeftDir.Text = "폴더선택";
             btnLeftDir.UseVisualStyleBackColor = true;
+            btnLeftDir.Click += btnLeftDir_Click;
             // 
             // txtLeftDir
             // 
@@ -153,7 +154,7 @@
             lblAppName.AutoSize = true;
             lblAppName.Font = new Font("맑은 고딕", 30F);
             lblAppName.ForeColor = SystemColors.Highlight;
-            lblAppName.Location = new Point(0, 0);
+            lblAppName.Location = new Point(3, 16);
             lblAppName.Name = "lblAppName";
             lblAppName.Size = new Size(262, 54);
             lblAppName.TabIndex = 0;
@@ -200,6 +201,7 @@
             btnRightDir.TabIndex = 3;
             btnRightDir.Text = "폴더선택";
             btnRightDir.UseVisualStyleBackColor = true;
+            btnRightDir.Click += btnRightDir_Click;
             // 
             // txtRightDir
             // 
@@ -221,7 +223,7 @@
             // btnCopyFromRight
             // 
             btnCopyFromRight.Font = new Font("맑은 고딕", 16F);
-            btnCopyFromRight.Location = new Point(23, 16);
+            btnCopyFromRight.Location = new Point(15, 16);
             btnCopyFromRight.Name = "btnCopyFromRight";
             btnCopyFromRight.Size = new Size(81, 38);
             btnCopyFromRight.TabIndex = 1;
